@@ -1,0 +1,6 @@
+f1 = open("H3_txt.txt", "r")
+f2 = f1.readlines()
+f1.close()
+print(f2)
+for line in f2:
+    print(line.replace('$', 'y'))
