@@ -1,0 +1,22 @@
+
+f1 = open("H3_txt.txt", "w")
+f1.write("This is my third python homework.\n")
+f1.write("First I need to write a function to open and read this text file in Python.\n")
+f1.write("Then I must replace each 'y' symbol with '$' symbol.\n")
+f1.close()
+f2 = open("H3_txt.txt", "r")
+f = f2.readlines()
+f2.close()
+print(f)
+s = ""
+for line in f:
+    for i in line:
+        if i == 'y':
+            s = s + '$'
+        else:
+            s = s + i
+print(s)
+f3 = open("H3_txt.txt", "w")
+f3.write(s)
+print(f3)
+
